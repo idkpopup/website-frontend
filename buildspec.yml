@@ -1,6 +1,8 @@
 version: 0.2
 
 phases:
+  install:
+    runtime-versions: C# 2.2
   pre_build:
     commands:
   build:
