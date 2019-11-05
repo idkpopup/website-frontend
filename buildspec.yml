@@ -15,4 +15,5 @@ phases:
     commands:
       - echo Pushing the Docker images...
       - aws ecr get-login
+      - docker login –u AWS –p polarCloud77! –e none https://520384133655.dkr.ecr.us-west-1.amazonaws.com
       - docker push 520384133655.dkr.ecr.us-west-1.amazonaws.com/polarcloud-web:latest
