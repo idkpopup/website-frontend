@@ -9,8 +9,10 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection; 
-
+using Microsoft.Extensions.DependencyInjection;
+using NLog;
+using NLog.AWS.Logger;
+using NLog.Config;
 
 namespace Site
 {
@@ -40,6 +42,19 @@ namespace Site
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            var config = new LoggingConfiguration();
+
+            var awsTarget = new AWSTarget()
+            {
+                LogGroup = "polarCloud-Website",
+                Region = "us-west-1"
+            };
+            config.AddTarget("aws", awsTarget);
+
+            config.LoggingRules.Add(new LoggingRule("*", LogLevel.Debug, awsTarget));
+
+            LogManager.Configuration = config;
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
