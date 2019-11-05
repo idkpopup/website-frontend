@@ -11,9 +11,7 @@ phases:
     commands:
       - echo Building the Docker image...
       - docker build -t 520384133655.dkr.ecr.us-west-1.amazonaws.com/polarcloud-web:latest .
-      - docker tag 520384133655.dkr.ecr.us-west-1.amazonaws.com/polarcloud-web:latest 520384133655.dkr.ecr.us-west-1.amazonaws.com/polarcloud-web:latest
   post_build:
     commands:
-      - echo Build completed on `date`
       - echo Pushing the Docker images...
-      - docker push https://520384133655.dkr.ecr.us-west-1.amazonaws.com/polarcloud-web:latest
+      - docker push 520384133655.dkr.ecr.us-west-1.amazonaws.com/polarcloud-web:latest
