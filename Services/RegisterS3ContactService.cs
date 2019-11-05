@@ -23,7 +23,7 @@ namespace Site.Services
         async Task IRegisterContactService.Register(Contact contact)
         {
             contact.Id = Guid.NewGuid().ToString("N");
-            logger.Info("Saving contact {0} to S3", contact.Id);
+            logger.Info("Prepairing contact {0} for S3", contact.Id);
 
             Amazon.AWSConfigs.RegionEndpoint = RegionEndpoint.USWest1;
             client = new AmazonS3Client(bucketRegion);
@@ -34,14 +34,12 @@ namespace Site.Services
             request.Key = keyName + "/" + contact.Id;
             request.ContentType = "application/json";
             request.ContentBody = JsonConvert.SerializeObject(contact);
-            
+            logger.Info("Pushing contact {0} to S3", contact.Id);
             try {
                 var response = await client.PutObjectAsync(request);
-                Console.WriteLine(response.HttpStatusCode);
-                logger.Info(string.Format("Saved contact {0} to S3", contact.Id));
+                logger.Info(string.Format("Saved contact {0} to S3", contact.Id));                
             } catch (Exception ex) {
                 logger.Error(ex, string.Format("Exception occured saving contact {0}", contact.Id));
-                Console.WriteLine(ex);
             }
         }
     }
