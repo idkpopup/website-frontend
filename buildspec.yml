@@ -1,6 +1,10 @@
 version: 0.2
 
 phases:
+  install:
+    runtime-versions:
+        docker: 19
+        dotnet: 2.2
   pre_build:
     commands:
   build:
