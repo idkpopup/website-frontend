@@ -10,10 +10,10 @@ phases:
   build:
     commands:
       - echo Building the Docker image...
-      - docker build -t 520384133655.dkr.ecr.us-west-1.amazonaws.com/polarcloud-web:latest .
+      - docker build -t polarcloud-web .
+      - docker tag polarcloud-web:latest 520384133655.dkr.ecr.us-west-1.amazonaws.com/polarcloud-web:latest
   post_build:
     commands:
       - echo Pushing the Docker images...
-      - aws ecr get-login
-      - docker login –u AWS –p polarCloud77! –e none https://520384133655.dkr.ecr.us-west-1.amazonaws.com
+      - (aws ecr get-login --no-include-email --region us-west-1)
       - docker push 520384133655.dkr.ecr.us-west-1.amazonaws.com/polarcloud-web:latest
