@@ -16,4 +16,4 @@ phases:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker images...
-      - docker push 520384133655.dkr.ecr.us-west-1.amazonaws.com/polarcloud-web:latest
+      - docker push https://520384133655.dkr.ecr.us-west-1.amazonaws.com/polarcloud-web:latest
