@@ -34,8 +34,9 @@ namespace Site.Services
             request.Key = keyName + "/" + contact.Id;
             request.ContentType = "application/json";
             request.ContentBody = JsonConvert.SerializeObject(contact);
-            logger.Info("Pushing contact {0} to S3", contact.Id);
+            
             try {
+                logger.Info("Pushing contact {0} to S3", contact.Id);
                 var response = await client.PutObjectAsync(request);
                 logger.Info(string.Format("Saved contact {0} to S3", contact.Id));                
             } catch (Exception ex) {
