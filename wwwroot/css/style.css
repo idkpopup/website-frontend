@@ -408,10 +408,6 @@ text-accent-color {
   outline: none;
 }
 
-.nav-menu li:hover > a,
-.nav-menu > .menu-active > a {
-    color: #800080;
-}
 
 .nav-menu > li {
   margin-left: 10px;
@@ -598,7 +594,7 @@ body.mobile-nav-active #mobile-nav-toggle {
         display: block;
         width: 40px;
         height: 3px;
-        background: #800080;
+        background: #9FC7E3;
         bottom: 0;
         left: calc(50% - 20px);
     }
@@ -1431,7 +1427,7 @@ enroll {
         font-family: "Montserrat", sans-serif;
         font-weight: 700;
         letter-spacing: 3px;
-        border-left: 4px solid #800080;
+        border-left: 4px solid #9FC7E3;
     }
 
 #footer .footer-top .footer-info p {
@@ -1458,7 +1454,7 @@ enroll {
 }
 
     #footer .footer-top .social-links a:hover {
-        background: #800080;
+        background: #9FC7E3;
         color: #fff;
     }
 
@@ -1486,7 +1482,7 @@ enroll {
 }
 
     #footer .footer-top h4::after {
-        background: #800080;
+        background: #9FC7E3;
         width: 60px;
     }
 
@@ -1519,7 +1515,7 @@ enroll {
 }
 
     #footer .footer-top .footer-links ul a:hover {
-        color: #800080;
+        color: #9FC7E3;
     }
 
 #footer .footer-top .footer-contact {
@@ -1541,12 +1537,13 @@ enroll {
 }
 
     #footer .footer-top .footer-newsletter input[type="submit"] {
-        background: #800080;
+        background: #9FC7E3;
         border: 0;
         width: 35%;
+        font-weight: bolder;
         padding: 6px 0;
         text-align: center;
-        color: #fff;
+        color: black;
         transition: 0.3s;
         cursor: pointer;
     }

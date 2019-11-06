@@ -1,9 +1,16 @@
 ﻿    <div id="cookieConsent" class="alert alert-info alert-dismissible fade show cookies" role="alert">
-        We use cookies to personalize content and to analyze our traffic. We do not share your information.
-        <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>.
-        <button type="button" id="btn-accept" class="accept-policy close">
-            <span aria-hidden="true">Accept</span>
-        </button>
+        <div class="container">
+            <div class="row">
+                <div class="col">We use cookies to personalize content and to analyze our traffic. We do not share your information.
+                <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>.
+                </div>
+                <div class="col-1 pull-right">
+                <button type="button" id="btn-accept" class="btn btn-primary">
+                    <span aria-hidden="true">Accept</span>
+                </button>
+                </div>
+            </div>
+        </div>
     </div>
     <script>
 
@@ -14,7 +21,7 @@
         });
 
         
-function getCookie(cname) {
+        function getCookie(cname) {
                 var name = cname + "=";
                 var decodedCookie = decodeURIComponent(document.cookie);
                 var ca = decodedCookie.split(';');

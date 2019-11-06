@@ -29,6 +29,12 @@
 
     <!-- Main Stylesheet File -->
     <link href="/css/style.css" rel="stylesheet">
+
+    <style>
+        .nav-menu a {
+            color: #9FC7E3;
+        }
+        </style>
 </head>
 
 <body style="background: black;">
@@ -41,132 +47,104 @@
 
                     <div class="row portfolio-container">
 
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
-                            <div class="portfolio-wrap">
-                                <figure>
-                                    <img src="/img/playbook/newBusinessChecklist.png" class="img-fluid" alt="">
-                                </figure>
+                        <a asp-controler="Playbook" asp-action="NewBusinessChecklist" style="color: #414142;">
+                            <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="/img/playbook/newBusinessChecklist.png" class="img-fluid" alt="">
+                                    </figure>
 
-                                <div class="portfolio-info">
-                                    <a asp-controler="Playbook" asp-action="NewBusinessChecklist">New Business Checklist</a>
+                                    <div class="portfolio-info">
+                                        Setting Up a Business - Checklist
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                         
+                        <a asp-controler="Playbook" asp-action="productDescription" style="color: #414142;">
+                            <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="/img/playbook/product-description.jpg" class="img-fluid" alt="">
+                                    </figure>
 
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="portfolio-wrap">
-                                <figure>
-                                    <img src="/img/playbook/product-description.jpg" class="img-fluid" alt="">
-                                </figure>
-
-                                <div class="portfolio-info">
-                                    <a asp-controler="Playbook" asp-action="productDescription">Writing a Product Description</a>
+                                    <div class="portfolio-info">
+                                        Writing a Product Description
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
-                            <div class="portfolio-wrap">
-                                <figure>
-                                    <img src="/img/playbook/due-diligence.png" class="img-fluid" alt="">
-                                    
-                                </figure>
+                        <a asp-controler="Playbook" asp-action="technicalDueDiligence" style="color: #414142;">
+                            <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="/img/playbook/due-diligence.png" class="img-fluid" alt="">
+                                    </figure>
 
-                                <div class="portfolio-info">
-                                    <a asp-controler="Playbook" asp-action="technicalDueDiligence">Performing a Technology Due Dililgence</a>
+                                    <div class="portfolio-info">
+                                        Performing a Technology Due Dililgence - Checklist
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
-                            <div class="portfolio-wrap">
-                                <figure>
-                                    <img src="/img/playbook/team.png">
-                                </figure>
+                        <a asp-controler="Playbook" asp-action="BuildingAndRunningTeams" style="color: #414142;">
+                            <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="/img/playbook/team.png">
+                                    </figure>
 
-                                <div class="portfolio-info">
-                                    <a asp-controler="Playbook" asp-action="BuildingAndRunningTeams">Building and Running Teams</a>
+                                    <div class="portfolio-info">
+                                        Building and Running Teams
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
-                            <div class="portfolio-wrap">
-                                <figure>
-                                    <img src="/img/playbook/marketing.png" class="img-fluid" alt="">
-                                </figure>
+                        <a asp-controler="Playbook" asp-action="OmniChannelMarketing" style="color: #414142;">
+                            <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="/img/playbook/marketing.png" class="img-fluid" alt="">
+                                    </figure>
 
-                                <div class="portfolio-info">
-                                    <a asp-controler="Playbook" asp-action="OmniChannelMarketing">Omni-Channel Marketing</a>
+                                    <div class="portfolio-info">
+                                        Omni-Channel Marketing
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
-                            <div class="portfolio-wrap">
-                                <figure>
-                                    <img src="/img/playbook/questionare.png">
-                                </figure>
+                        <a asp-controler="Playbook" asp-action="StandardQuestionere" style="color: #414142;">
+                            <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="/img/playbook/questionare.png">
+                                    </figure>
 
-                                <div class="portfolio-info">
-                                    <a asp-controler="Playbook" asp-action="StandardQuestionere">polarCloud's Standard Questionare</a>
+                                    <div class="portfolio-info">
+                                        polarCloud's Standard Questionare
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
 
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="portfolio-wrap">
-                                <figure>
-                                    <img src="/img/playbook/csa.png" class="img-fluid" alt="">
-                                </figure>
+                        <a as-controler="Playbook" asp-action="CAIQ" style="color: #414142;">
+                            <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="/img/playbook/csa.png" class="img-fluid" alt="">
+                                    </figure>
 
-                                <div class="portfolio-info">
-                                    <a as-controler="Playbook" asp-action="CAIQ">Consensus Assessments Initiative Questionnaire</a>
+                                    <div class="portfolio-info">
+                                        Consensus Assessments Initiative Questionnaire
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-                        
-                        </div>
-
-                       
-<!-- 
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="portfolio-wrap">
-                                <figure>
-                                    <img src="img/portfolio/card3.jpg" class="img-fluid" alt="">
-                                    <a href="img/portfolio/card3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 3"
-                                       title="Preview"><i class="ion ion-eye"></i></a>
-                                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                                </figure>
-
-                                <div class="portfolio-info">
-                                    <h4><a href="#">Card 3</a></h4>
-                                    <p>Card</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
-                            <div class="portfolio-wrap">
-                                <figure>
-                                    <img src="img/portfolio/web1.jpg" class="img-fluid" alt="">
-                                    <a href="img/portfolio/web1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1"
-                                       title="Preview"><i class="ion ion-eye"></i></a>
-                                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                                </figure>
-
-                                <div class="portfolio-info">
-                                    <h4><a href="#">Web 1</a></h4>
-                                    <p>Web</p>
-                                </div>
-                            </div>
-                        </div> -->
-
-                    </div>
-
+                        </a>
                 </div>
             </section>
 

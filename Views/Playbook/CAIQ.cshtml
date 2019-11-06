@@ -31,7 +31,7 @@
         <link href="/css/style.css" rel="stylesheet">
         
         <style>
-            .master {
+             .master {
                 margin-bottom: 20px;
                 background: #222222;
             }
@@ -40,36 +40,35 @@
                 font-size: 36px;
                 font-size: 5.4vw;
                 font-family: roboto;
+                color: #9FC7E3;
             }
 
             .h3 {
-                font-size: 65px;
-                color: #800080;
-            }
-
-            .quote {
-                font-size: 50px;
-                color: #800080;
-                font-weight: bold;
+                font-size: 40px;
+                color: #9FC7E3;
             }
 
             p {
                 font-family: open-sans, Sans-serif, monospace;
                 font-size: 1em;
-                letter-spacing: 2px
-
+                letter-spacing: 2px;
+                color: #BCBEC0;
             }
+
+            a.anchor { color: #9FC7E3; }
+            
             </style>
     </head>
 
     <body class="master">
         <div style="margin-top: 120px">
-            <h>This is a compiled list of the questions asked in the Consensus Assessments Initiative Questionnaire from the <a href=https://cloudsecurityalliance.org/ target="_none">Cloud Security Alliance</a>. 
-            <p>The full document can be found <a href=https://cloudsecurityalliance.org/download/artifacts/consensus-assessments-initiative-questionnaire-v3-0-1/ target"_blank">here</a>.</h>
             <h4 class="h4">CAIQ</h4>
+            <p style="margin-top: 20px">This is a compiled list of the questions asked in the Consensus Assessments Initiative Questionnaire from the <a href=https://cloudsecurityalliance.org/ target="_none" class="anchor">Cloud Security Alliance</a>.</p>
+            <p>The full document can be found <a href=https://cloudsecurityalliance.org/download/artifacts/consensus-assessments-initiative-questionnaire-v3-0-1/ target"_blank" class="anchor">here</a>.</p>
+            
  
-                <h3 class="h3"><a href="#" onclick="toggle('security');">Security</a></h3>
-                <div id="security" style="display: none">
+                <h3 class="h3"><a href="#" onclick="toggle('security');" class="anchor">Security</a></h3>
+                <div id="security" style="display: none;">
                     <P>Do you perform security tests and reviews? Internally, externally, or both?
                     <P>Are all of your network operations conducted over a secure layer (TLS)?
                     <P>Do you conduct network penetration tests regularly?
@@ -82,7 +81,7 @@
                     <P> Are all firewall access control lists documented with business justification?
                 </div>
 
-                <h3 class="h3"><a href="#customerData" onclick="toggle('customerData');">Handling Customer Data</a></h3>
+                <h3 class="h3" style="margin-top: 20px"><a href="#customerData" onclick="toggle('customerData');" class="anchor">Handling Customer Data</a></h3>
                 <div id="customerData" style="display: none">
                     <P>Is data altered manually or do you use automated processes for data manipulation?
                     <P>In which ways do customers own their data?
@@ -104,7 +103,7 @@
                     <P> Do you enforce and attest to tenant data separation when producing data in response to legal subpoenas?
                 </div>
 
-                <h3 class="h3"><a href="#integration" onclick="toggle('integration');">Integration</a></h3>
+                <h3 class="h3" style="margin-top: 20px"><a href="#integration" onclick="toggle('integration');" class="anchor">Integration</a></h3>
                 <div id="integration" style="display: none">
                     <P>Do you use industry standards to build in security for your Systems/Software Development Lifecycle (SDLC)?
                     <P>How do you detect security defects in your source code?
@@ -228,7 +227,7 @@
                     <P> Is all unauthorized mobile code prevented from executing?
                 </div>
 
-                <h3 class="h3"><a href="#policy" onclick="toggle('policy');">Policy</a></h3>
+                <h3 class="h3" style="margin-top: 20px"><a href="#policy" onclick="toggle('policy');" class="anchor">Policy</a></h3>
                 <div id="policy" style="display: none">
                     <P>Do you verify your vendors follow the same standards?
                     <P>Are you SOC2 compliant?

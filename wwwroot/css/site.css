@@ -26,9 +26,18 @@ html {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
-button.accept-policy {
+.accept-policy {
   font-size: 1rem;
   line-height: inherit;
+  color: #0099CC;
+  background: gold;  
+  border: 2px solid #0099CC;
+  border-radius: 6px; 
+  }
+
+.accept-policy:hover {      
+  background-color: #008CBA;      
+  color: white; 
 }
 
 /* Sticky footer styles
