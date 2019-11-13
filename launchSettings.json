@@ -33,14 +33,13 @@
         "ASPNETCORE_DETAILEDERRORS": "1",
         "ASPNETCORE_ENVIRONMENT": "Staging"
       },
-      "applicationUrl": "http://localhost:5002/"
+      "applicationUrl": "http://localhost:80/"
     }
   },
   "Docker": {
     "commandName": "Docker",
     "launchBrowser": true,
     "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/api/values",
-    "httpPort": 5000,
-    "httpsPort": 5002
+    "httpPort": 80
   }
 }

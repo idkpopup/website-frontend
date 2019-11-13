@@ -1,6 +1,6 @@
-ports:
-  - "5000:80"
-  - "5002:443"
-volumes:
-      - ${APPDATA}/Microsoft/UserSecrets/:/root/.microsoft/usersecrets
-      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https/
+version: '3'
+services:
+  web:
+    image: polarcloudweb/latest
+    ports:
+      - "80:80"

@@ -1,12 +1,11 @@
 {
     "AWSEBDockerrunVersion": "1",
     "Image": {
-      "Name": "polarcloud-web:latest",
+      "Name": "polarcloudweb:latest",
       "Update": "true"
     },
     "Ports": [
       {
-        "ContainerPort": "5002"
-      }
+        "ContainerPort": "80"      }
     ]
   }
