@@ -1,7 +1,7 @@
 {
     "AWSEBDockerrunVersion": "1",
     "Image": {
-      "Name": "520384133655.dkr.ecr.us-west-1.amazonaws.com/polarcloud-web:latest",
+      "Name": "polarcloud-web:latest",
       "Update": "true"
     },
     "Ports": [

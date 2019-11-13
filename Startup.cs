@@ -88,8 +88,8 @@ namespace Site
 
                 routes.MapRoute(
                 "register",
-                "playbook/{action=playbook}",
-                new { controller = "Playbook" });
+                "playbooks/{action=playbooks}",
+                new { controller = "Playbooks" });
 
 
             });
