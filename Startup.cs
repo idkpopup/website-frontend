@@ -37,12 +37,6 @@ namespace Site
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            services.AddHttpsRedirection(options =>
-            {
-                options.RedirectStatusCode = StatusCodes.Status308PermanentRedirect;
-                options.HttpsPort = 443;
-            });
-
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2).AddJsonOptions(options => options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore);
             
@@ -94,8 +88,8 @@ namespace Site
 
                 routes.MapRoute(
                 "register",
-                "playbooks/{action=playbooks}",
-                new { controller = "Playbooks" });
+                "playbook/{action=playbook}",
+                new { controller = "Playbook" });
 
 
             });

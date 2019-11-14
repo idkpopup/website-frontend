@@ -2,10 +2,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Site.Controllers
 {
-    public class PlaybooksController : Controller
+    public class PlaybookController : Controller
     {
         
-        public IActionResult Playbooks() 
+        public IActionResult Playbook() 
         {
             return View();
         }
