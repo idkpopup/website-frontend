@@ -17,5 +17,7 @@ FROM base as final
 WORKDIR /app
 COPY --from=publish /app .
 
+ENV ASPNETCORE_URLS http://+:80
+
 EXPOSE 80
 ENTRYPOINT ["dotnet", "Site.dll"]
