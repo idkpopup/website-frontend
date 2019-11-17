@@ -51,11 +51,11 @@ namespace Site
                 LogGroup = "polarCloud-Website",
                 Region = "us-west-1"
             };
-            config.AddTarget("aws", awsTarget);
+            //config.AddTarget("aws", awsTarget);
 
-            config.LoggingRules.Add(new LoggingRule("*", LogLevel.Debug, awsTarget));
+            //config.LoggingRules.Add(new LoggingRule("*", LogLevel.Debug, awsTarget));
 
-            LogManager.Configuration = config;
+            //LogManager.Configuration = config;
 
             if (env.IsDevelopment())
             {
