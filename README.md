@@ -196,9 +196,13 @@ Check deployment was successful in the Elastic Beanstalk console. Click on the u
 <br><br>
 ># DevOps
 ![](README-images/devops.png)
+># CICD
+Here we use ```AWS CodePipeline``` to To build, test and deploy code through various stages. Our pipeline has 4 stages.
 
 <br><br>
 ># Backend
-When receiving a contact on the polarcloud.com landing page, the site adds the contact to a database (S3), to a marketing and analytics platform (Amazon Pinpoint) and notifies polarCloud Consulting's via email and SMS. To deploy the backend, please refer to the READ.ME in the backend repository
+When receiving a contact on the polarcloud.com landing page, the site adds the contact to a database (S3), to a marketing and analytics platform (Amazon Pinpoint) and notifies polarCloud Consulting's via email and SMS. 
+
+To deploy the backend, please refer to the ```READ.md``` in the backend repository https://github.com/polar-cloud/polarcloud-backend
 
 
