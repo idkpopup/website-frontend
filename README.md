@@ -253,7 +253,9 @@ Buildspec: `Use a buildspec file`
 
 Deploy Provider: `AWS Elastic Beanstalk`
 
-Application Name: `polarCloud-Web-Deploy`
+Input artifacts: `SourceArtifact`
+
+Application Name: `polarCloudWeb`
 
 EnvironmentName: `polarCloud-Web-Dev`
 
@@ -261,7 +263,58 @@ EnvironmentName: `polarCloud-Web-Dev`
 
 You should now see the pipeline building. 
 
-To extend the production pipeline
+If the build fails, try adding the following policy to the service role created by pipelines (polarCloud-Web-Build-service-role):
+``` policy
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "ecr:GetAuthorizationToken",
+                "ecr:InitiateLayerUpload",
+                "ecr:CompleteLayerUpload"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+```
+
+If the deployment fails, try attaching the `AmazonS3FullAccess` following polocy to the service role created by pipelines for `deployment` (polarCloud-Web-Build-service-role):
+
+To extend the production pipeline, create a new environment:
+
+``` cli
+eb create polarCloud-Web -i t2.micro
+```
+
+Edit the pipeline and `Add stage` called `ManualApproval` (this would be removed after including automated tests).
+
+Add an `Action Group`
+
+Action Name: `ManualApproval`
+
+Action Provider: `Manual Approval`
+
+`Done`
+
+Add another stage `Add stage` called `Deploy-Prod`
+
+Add an `Action Group`
+
+Action Name: `Deploy-Prod`
+
+Action Provider: `AWS Elastic Beanstalk`
+
+Input artifacts: `SourceArtifact`
+
+Application name: `polarCloudWeb`
+
+Environment name: `polarCloud-Web-Prod`
+
+`Done`
 
 <br><br>
 ># Backend
