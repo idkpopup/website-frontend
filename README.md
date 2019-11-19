@@ -316,6 +316,8 @@ Environment name: `polarCloud-Web-Prod`
 
 `Done`
 
+Once the pipeline is complete, you can create an `A record` on your DNS provider to point to your production URL found in the `AWS Elastic Beanstalk` conle.
+
 <br><br>
 ># Backend
 When receiving a contact on the polarcloud.com landing page, the site adds the contact to a database (S3), to a marketing and analytics platform (Amazon Pinpoint) and notifies polarCloud Consulting's via email and SMS. 
