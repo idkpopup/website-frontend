@@ -199,17 +199,67 @@ Check deployment was successful in the Elastic Beanstalk console. Click on the u
 ># DevOps
 ![](README-images/devops.png)
 ># CICD
-Here we use ```AWS CodePipeline``` to To build, test and deploy code through various stages. Our pipeline has 4 stages and was consturcted using the AWS Console. Here is the expected setup when cxreating a new pipeline
+Here we use ```AWS CodePipeline``` to To build, test and deploy code through various stages. Our pipeline has 4 stages and was consturcted using the AWS Console. Before creating a new pipeline, updated `buildspec.yml` by changing your accountId:
+
+```Example
+build:
+    commands:
+      - echo Building the Docker image...
+      - docker build -t {account-id}.dkr.ecr.us-west-1.amazonaws.com/polarcloud-web:latest .
+  post_build:
+    commands:
+      - echo Pushing the Docker images...
+      - $(aws ecr get-login --no-include-email --region us-west-1)
+      - docker push {account-id}.dkr.ecr.us-west-1.amazonaws.com/polarcloud-web:latest  
+```
+
+Here is the expected setup when cxreating a new pipeline:
+
 Pipeline Name: `polarCloud-Web-Pipeline`
+
 `New Service Role`
+
 [x] Allow AWS CodePipeline to create a service role so it can be used with this new pipeline
+
 `Next`
+
 Source: `GitHub`
+
 `Next`
+
 Build provider: `AWS CodeBuild`
 
+`Create Project`
 
+Project Name: `polarCloud-Web-Deploy`
 
+Environment Image: `Managed Image`
+
+Operation System: `Ubuntu`
+
+Runtimes: `Standard`
+
+Image: `aws/codebuild/standard:2.0
+
+Service Role: `New service role`
+
+Buildspec: `Use a buildspec file`
+
+`Continue to Codepipeline`
+
+`Next`
+
+Deploy Provider: `AWS Elastic Beanstalk`
+
+Application Name: `polarCloud-Web-Deploy`
+
+EnvironmentName: `polarCloud-Web-Dev`
+
+`Create pipeline`
+
+You should now see the pipeline building. 
+
+To extend the production pipeline
 
 <br><br>
 ># Backend
