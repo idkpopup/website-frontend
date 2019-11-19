@@ -17,6 +17,8 @@ polarcloud.consulting is a website built using:
 
 This document guides the reader through setting up and running the https://polarcloud.consulting website in a new AWS account.
 
+![](README-images/landing.png)
+
 <br><br>
 ># Install .NET Core 2.2
 https://dotnet.microsoft.com/download/dotnet-core/2.2
@@ -185,7 +187,7 @@ x!
 enter
 ```
 
-># Clean Up Zip
+># Clean Up
 ``` cli
 rm Site.zip
 ```
