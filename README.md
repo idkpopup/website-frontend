@@ -7,6 +7,7 @@ polarcloud.consulting is a website built using:
 * ```HTML``` for design.
 * ```CSS``` for styling.
 * ```AWS``` for hosting.
+* ```Route53``` for DNS.
 * ```IAM``` for access policies.
 * ```Elastic Beanstalk``` for management of website infrastructure.
 * ```EC2``` to host the website.
@@ -36,14 +37,15 @@ Create or update file ```c:\.aws\config``` and add a profile
 Sample config:
 ``` config
 [polarCloudAdmin]
-aws_access_key_id=AKIAXSKKPXILZR746A4L
-aws_secret_access_key=3uaoa3nDmgp0e+1ARdbmiq6f8n2R+E1nMh+VBbJC
+aws_access_key_id=
+aws_secret_access_key=
 region=us-west-1
 ```
 Update the CLI to use the profile
 ``` cli
 aws config
 ```
+
 <br><br>
 ># Fork this repository
 Fork this repository on GitHub as updates need to be made for new AWS accounts
@@ -197,7 +199,17 @@ Check deployment was successful in the Elastic Beanstalk console. Click on the u
 ># DevOps
 ![](README-images/devops.png)
 ># CICD
-Here we use ```AWS CodePipeline``` to To build, test and deploy code through various stages. Our pipeline has 4 stages.
+Here we use ```AWS CodePipeline``` to To build, test and deploy code through various stages. Our pipeline has 4 stages and was consturcted using the AWS Console. Here is the expected setup when cxreating a new pipeline
+Pipeline Name: `polarCloud-Web-Pipeline`
+`New Service Role`
+[x] Allow AWS CodePipeline to create a service role so it can be used with this new pipeline
+`Next`
+Source: `GitHub`
+`Next`
+Build provider: `AWS CodeBuild`
+
+
+
 
 <br><br>
 ># Backend
