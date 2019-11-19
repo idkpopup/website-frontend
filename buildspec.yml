@@ -11,9 +11,9 @@ phases:
   build:
     commands:
       - echo Building the Docker image...
-      - docker build -t 520384133655.dkr.ecr.us-west-1.amazonaws.com/web:latest .
+      - docker build -t 520384133655.dkr.ecr.us-west-1.amazonaws.com/polarcloud-web:latest .
   post_build:
     commands:
       - echo Pushing the Docker images...
       - $(aws ecr get-login --no-include-email --region us-west-1)
-      - docker push 520384133655.dkr.ecr.us-west-1.amazonaws.com/web:latest  
+      - docker push 520384133655.dkr.ecr.us-west-1.amazonaws.com/polarcloud-web:latest  
