@@ -1,5 +1,6 @@
 ># How to configure and deploy this website
 polarcloud.consulting is a website built using:
+
 * ```Github``` as a source code repository.
 * ```Visual Studio Code``` as its runtime.
 * ```.NET Core MVC 2.2``` as its runtime.
@@ -130,12 +131,17 @@ polarCloud-Web-Dev | Elastic Beanstalk created security group used when no ELB s
 PolarCloud-Web-Dev | SecurityGroup for ElasticBeanstalk environment
 
 ># Update Source Code
-Create a bucket in ```S3```.
+Create a bucket in `S3`
+``` cli
+create-bucket --bucket {bucket-name}
+```
 
 Update ```/Services/RegisterS3ContactService.cs``` to use the name of your bucket.
 ``` c#
 private const string bucketName = {bucket-name};
 ```
+For simplicity, we won't split out Development and Production buckets. The code can be modified to use environment variables for the proper separation of environments.
+
 ![](README-images/CICD.jpg)
 <br><br>
 ># Debugging and Deploying

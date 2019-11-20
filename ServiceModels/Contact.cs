@@ -22,7 +22,7 @@ namespace Site.ServiceModels
 
         public String Date { 
             get {
-                return DateTime.Now.ToString("YYYY/MM/DD");
+                return DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss");
             } 
             set {}
         }
