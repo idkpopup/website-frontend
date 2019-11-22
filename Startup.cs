@@ -20,6 +20,9 @@ namespace Site
 {
     public class Startup
     {
+
+        Logger logger = LogManager.GetLogger("aws");
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -93,6 +96,8 @@ namespace Site
 
 
             });
+
+            logger.Info("Routes configured, starting up");
 
         }
     }
