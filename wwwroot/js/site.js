@@ -54,6 +54,9 @@ function registerUser(clickSource) {
                 document.getElementById('contactUs').style.display = "none";
                 document.getElementById('thankYou').style.display = "block";
             }
+    })
+    .fail(function (jqXHR, textStatus, errorThrown) {
+        setCookie("failed reason:" + JSON.stringify(jqXHR) + "\n" + JSON.stringify(textStatus) + "\n" + JSON.stringify(errorThrown));
     });
 };
 
