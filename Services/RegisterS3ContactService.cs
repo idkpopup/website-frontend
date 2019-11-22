@@ -40,7 +40,7 @@ namespace Site.Services
                 var response = await client.PutObjectAsync(request);
                 logger.Info(string.Format("Saved contact {0} to S3", contact.Id));                
             } catch (Exception ex) {
-                logger.Error(ex, string.Format("Exception occured saving contact {0}", contact.Id));
+                logger.Error(ex, string.Format("Exception occured saving contact {0} {1}", contact.Id, ex.Message));
             }
         }
     }
