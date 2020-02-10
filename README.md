@@ -1,9 +1,9 @@
 ># How to configure and deploy this website
-polarcloud.consulting is a website built using:
+IDK popup is a website built using:
 
 * ```Github``` as a source code repository.
 * ```Visual Studio Code``` as its runtime.
-* ```.NET Core MVC 2.2``` as its runtime.
+* ```.NET Core MVC 3.1``` as its runtime.
 * ```Bootstrap``` for responsive mobile design.
 * ```HTML``` for design.
 * ```CSS``` for styling.
@@ -16,13 +16,13 @@ polarcloud.consulting is a website built using:
 * ```Docker``` for containerization.
 * ```CodePipeline``` For deployment of new versions of the website.
 
-This document guides the reader through setting up and running the https://polarcloud.consulting website in a new AWS account.
+This document guides the reader through setting up and running the https://idkpopup.com website in a new AWS account.
 
 ![](README-images/landing.png)
 
 <br><br>
-># Install .NET Core 2.2
-https://dotnet.microsoft.com/download/dotnet-core/2.2
+># Install .NET Core 3.1
+https://dotnet.microsoft.com/download/dotnet-core/3.1
 <br><br>
 ># Install Visual Studio Code
 https://code.visualstudio.com/download
@@ -35,19 +35,28 @@ In IAM, add a temporary user and attach the policy ```AdministratorAccess```.
 
 Create new Security Credentials.
 
-Create or update file ```c:\.aws\config``` and add a profile
+Create or update file ```c:\.aws\credentials``` adding a profile
 
 Sample config:
 ``` config
-[polarCloudAdmin]
+[IDKpolarcloud-website]
 aws_access_key_id=
 aws_secret_access_key=
 region=us-west-1
 ```
-Update the CLI to use the profile
-``` cli
-aws config
+Update you Environment Variable to use the profile
+
+Windows
+``` windows
+setx AWS_PROFILE IDKpopup-website
 ```
+
+Mac
+``` Mac
+export AWS_PROFILE=IDKpopup-website
+```
+
+Reload your terminal
 
 <br><br>
 ># Fork this repository
@@ -56,20 +65,16 @@ Fork this repository on GitHub as updates need to be made for new AWS accounts
 ># Remove or Update to your Google Analytics account
 In ```Visual Studio Code```, search for and replace the google analytics html tags:
 
- ```Ctrl+Shift+F```. Paste ```<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151946230-1"></script>```. Press ```enter```
+ ```Ctrl+Shift+F```. Paste ```UA-158109460-1```. Press ```enter```
 <br>
-Replace all references.
+Replace all references with your GA ID
 
 <br><br>
 ># Create an SSL Certificate
 ``` cli
-aws request-certificate --domain-name {your domain name} --subject-alternative-names *.{your domain name}
+aws acm request-certificate --domain-name {your domain name} --subject-alternative-names *.{your domain name}
 ```
-Once created, obtain the CertificateArn for the domain.
-``` cli
-aws acm list-certificates
-```
-This will be used to override the .ebextensions/app.config file
+Once created, approve the validation email and obtain the ```CertificateArn``` for the domain. This will be used to override the .ebextensions/app.config file
 <br><br>
 ># .ebextensions
 This repository contains an Elastic Beanstalk configuration file which will need to be overwritten. The ```app.config``` localetdlocated in ```/.ebextensions```. 
@@ -94,14 +99,24 @@ option_settings:
 ```
 <br><br>
 ># Setup Elastic Beanstalk Environment
+``` eb init
+eb init
+
+2) us-west-1: US West (N. California)
+Application Name: website-frontend
+It appears you are using Docker. Is this correct? (Y/n): Y
+Do you wish to continue with CodeCommit? (y/N) (default is n): N
+Do you want to set up SSH for your instances? (Y/n): N
+```
+
 run the following commands
 ```cli
-eb create polarCloud-Web-Dev -i t2.micro
+eb create IDKpopup-website -i t2.micro
 ```
 <br><br>
 ># Expected Output
 
-Environment Name: ```polarCloud-Web-Dev```
+Environment Name: ```IDKpopup-website```
 
 ## Expetected EB Capacity Settings
 Elastic Beanstalk Environment type: ```load balanced```

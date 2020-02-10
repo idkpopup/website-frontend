@@ -15,7 +15,7 @@ namespace Site.Services
     {
         Logger logger = LogManager.GetLogger("aws");
         
-        private const string bucketName = "polarcloud";
+        private const string bucketName = "idkpopup-website";
         private const string keyName = "contacts/web";
         private static readonly RegionEndpoint bucketRegion = RegionEndpoint.USWest1; 
         private static IAmazonS3 client;
