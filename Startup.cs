@@ -43,6 +43,7 @@ namespace Site
 
 
             services.AddRazorPages();
+            services.AddControllersWithViews();
             
         }
 
@@ -77,7 +78,7 @@ namespace Site
             
             app.UseEndpoints(endpoints =>
             {
-
+                endpoints.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             //    endpoints.MapRoute(
             //     name: "default",

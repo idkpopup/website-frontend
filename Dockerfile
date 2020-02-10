@@ -1,21 +1,13 @@
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS base
 WORKDIR /app
-EXPOSE 80
 
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
-WORKDIR /src
-
-COPY Site.csproj .
-COPY ["Site.csproj", "./"]
+COPY *.csproj ./
 RUN dotnet restore
-COPY . .
-RUN dotnet build "Site.csproj" -c Release -o /app/build
 
-FROM build as publish
-RUN dotnet publish Site.csproj -c Release -o /app/publish
+COPY . ./
+RUN dotnet publish -c Release -o out
 
-FROM base as final
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
 WORKDIR /app
-COPY --from=build /app .
-
+COPY --from=base /app/out .
 ENTRYPOINT ["dotnet", "Site.dll"]
