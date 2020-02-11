@@ -76,22 +76,21 @@ namespace Site
             app.UseRouting();
             
             app.UseEndpoints(endpoints =>
-            {
-
+            {                
                 endpoints.MapRazorPages();
-            //    endpoints.MapRoute(
-            //     name: "default",
-            //     template: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapControllerRoute(
+                 name: "default",
+                 pattern: "{controller=Home}/{action=Index}/{id?}");
 
-            //     endpoints.MapRoute(
-            //     "register",
-            //     "api/register",
-            //     new { controller = "Register", action = "Post" });
+                endpoints.MapControllerRoute(
+                "register",
+                "api/register",
+                new { controller = "Register", action = "Post" });
 
-            //     endpoints.MapRoute(
-            //     "register",
-            //     "playbook/{action=playbook}",
-            //     new { controller = "Playbook" }); 
+                endpoints.MapControllerRoute(
+                "register",
+                "playbook/{action=playbook}",
+                new { controller = "Playbook" });
             });
             
             logger.Info("Routes configured, starting up");
