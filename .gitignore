@@ -27,6 +27,7 @@ bin/
 *.rar
 *.tar
 *.zip
+*.pem
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml

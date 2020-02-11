@@ -17,14 +17,6 @@ namespace Site
 
         public static void Main(string[] args)
         {
-            // var host = new HostBuilder()
-            // .UseContentRoot(Directory.GetCurrentDirectory())
-            // .ConfigureWebHostDefaults(webBuilder => {
-            //     webBuilder.UseKestrel(serverOptions => {})
-            //     .UseIISIntegration()
-            //     .UseStartup<Startup>();
-            // });
-
             WebHost.CreateDefaultBuilder().UseStartup<Startup>().Build().Run();
         }
 
