@@ -1,0 +1,375 @@
+@{
+    ViewBag.Title = "CAIQ";
+}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158109460-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-158109460-1');
+        </script>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="caiq, Consensus Assessments Initiative Questionnaire, cloud security, business consulting, cloud consulting" name="keywords">
+        <meta content="This is a compiled list of the questions asked in the Consensus Assessments Initiative Questionnaire from the Cloud Security Alliance." name="description">
+
+        <!-- Favicons -->
+        <link href="/img/logo.png" rel="icon">
+        <link href="/img/logo.png" rel="apple-touch-icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
+            rel="stylesheet">
+
+        <!-- Bootstrap CSS File -->
+        <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Libraries CSS Files -->
+        <link href="/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="/lib/animate/animate.min.css" rel="stylesheet">
+        <link href="/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+        <link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <!-- Main Stylesheet File -->
+        <link href="/css/style.css" rel="stylesheet">
+        
+        <style>
+             .master {
+                margin-bottom: 20px;
+                background: #222222;
+            }
+
+            .buffer {
+                margin-top: 120px;
+            }
+
+            .h4 {
+                font-size: 36px;
+                font-size: 5.4vw;
+                font-family: roboto;
+                color: #9FC7E3;
+            }
+
+            .h3 {
+                font-size: 40px;
+                color: #9FC7E3;
+            }
+
+            p {
+                font-family: open-sans, Sans-serif, monospace;
+                font-size: 1em;
+                letter-spacing: 2px;
+                color: #BCBEC0;
+            }
+
+            a.anchor { color: #9FC7E3; }
+            
+            </style>
+    </head>
+
+    <body class="master">
+        <div class="buffer">
+            <h4 class="h4">CAIQ</h4>
+            <p style="margin-top: 20px">This is a compiled list of the questions asked in the Consensus Assessments Initiative Questionnaire from the <a href=https://cloudsecurityalliance.org/ target="_none" class="anchor">Cloud Security Alliance</a>.</p>
+            <p>The full document can be found <a href=https://cloudsecurityalliance.org/download/artifacts/consensus-assessments-initiative-questionnaire-v3-0-1/ target"_blank" class="anchor">here</a>.</p>
+            
+ 
+                <h3 class="h3"><a href="#" onclick="toggle('security');" class="anchor">Security</a></h3>
+                <div id="security" style="display: none;">
+                    <P>Do you perform security tests and reviews? Internally, externally, or both?
+                    <P>Are all of your network operations conducted over a secure layer (TLS)?
+                    <P>Do you conduct network penetration tests regularly?
+                    <P>How are changes to security standards triaged?
+                    <P>Which encryption methodologies do you employ?
+                    <P>Are ingress and egress points, such as service areas and other points where unauthorized personnel may enter the premises, monitored, controlled and isolated from data storage and process?
+                    <P>Do you maintain key management procedures?
+                    <P> Pursuant to local laws, regulations, ethics, and contractual constraints, are all employment candidates, contractors, and involved third parties subject to background verification?
+                    <P> Are all personnel required to sign NDA or Confidentiality Agreements as a condition of employment to protect customer/tenant information?
+                    <P> Are all firewall access control lists documented with business justification?
+                </div>
+
+                <h3 class="h3" style="margin-top: 20px"><a href="#customerData" onclick="toggle('customerData');" class="anchor">Handling Customer Data</a></h3>
+                <div id="customerData" style="display: none">
+                    <P>Is data altered manually or do you use automated processes for data manipulation?
+                    <P>In which ways do customers own their data?
+                    <P>What can a customer do with their data?
+                    <P>How do you encrypt or separate customer data?
+                    <P>Do you restrict customer data by geography?
+                    <P>Can customers view your service level agreement and status of service?    
+                    <P>Do you have data-backup and retention policies?
+                    <P>Do you make your privacy and data governance policies openly available?
+                    <P>Do you allow tenants to specify which of your geographic locations their data is allowed to move into/out of (to address legal jurisdictional considerations based on where data is stored vs. accessed)?
+                    <P>Do you encrypt tenant data at rest (on disk/storage) within your environment?
+                    <P> Do you have platform and data appropriate encryption that uses open/validated formats and standard algorithms?
+                    <P> Do you allow your clients to provide their own trusted virtual machine image to ensure conformance to their own internal standards?
+                    <P> Do you provide documentation regarding how you may access tenant data and metadata?
+                    <P> Do you collect or create metadata about tenant data usage through inspection technologies (e.g., search engines, etc.)?
+                    <P> Do you allow tenants to opt out of having their data/metadata accessed via inspection technologies?
+                    <P> Do your data management policies and procedures address tenant and service level conflicts of interests?
+                    <P> Do your data management policies and procedures include a tamper audit or software integrity function for unauthorized access to tenant data?
+                    <P> Do you enforce and attest to tenant data separation when producing data in response to legal subpoenas?
+                </div>
+
+                <h3 class="h3" style="margin-top: 20px"><a href="#integration" onclick="toggle('integration');" class="anchor">Integration</a></h3>
+                <div id="integration" style="display: none">
+                    <P>Do you use industry standards to build in security for your Systems/Software Development Lifecycle (SDLC)?
+                    <P>How do you detect security defects in your source code?
+                    <P>How do you monitor changes to regulations or external compliance guidelines?
+                    <P>Can you recover customer data in the case of a service outage?
+                    <P>Are security mechanisms and redundancies implemented to protect equipment from utility service outages in manufacturing?
+                    <P>How is staff trained to handle service outages?
+                    <P>Can you provide evidence that policies, standards, and procedures have been established for maintaining a safe and secure working environment in offices, rooms, facilities, and secure areas?
+                    <P>Can you provide evidence that your personnel and involved third parties have been trained regarding your documented policies, standards, and procedures?
+                    <P>Do you utilize any third party/open source/proprietary frameworks to manage encryption keys?
+                    <P>Do you leverage encryption to protect data and virtual machine images during transport across and between networks and hypervisor instances?
+                    <P>Do you support tenant-generated encryption keys or permit tenants to encrypt data to an identity without access to a public key certificate (e.g., identity-based encryption)?
+                    <P> Are your encryption keys maintained by the cloud consumer or a trusted key management provider?
+                    <P> Do you store encryption keys in the cloud?
+                    <P> Do you have separate key management and key usage duties?
+                    <P> Do you have the capability to continuously monitor and report the compliance of your infrastructure against your information security baselines?
+                    <P> Do you provide security control health data in order to allow tenants to implement industry standard Continuous Monitoring (which allows continual tenant validation of your physical and logical control status)?
+                    <P> Can you provide evidence of due diligence mapping of your controls, architecture, and processes to regulations and/or standards?
+                    <P> Do risk assessment results include updates to security policies, procedures, standards, and controls to ensure they remain relevant and effective?
+                    <P> Are systems in place to monitor for privacy breaches and notify tenants expeditiously if a privacy event may have impacted their data?
+                    <P> Does the virtual machine management infrastructure include a tamper audit or software integrity function to detect changes to the build/configuration of the virtual machine?
+                    <P> Do you restrict, log, and monitor access to your information security management systems (e.g., hypervisors, firewalls, vulnerability scanners, network sniffers, APIs, etc.)?
+                    <P> Do you monitor and log privileged access (e.g., administrator level) to information security management systems?
+                    <P> Do you have controls in place ensuring timely removal of systems access that is no longer required for business purposes?
+                    <P> Do you provide metrics to track the speed with which you are able to remove systems access that is no longer required for business purposes?
+                    <P> Do you use dedicated secure networks to provide management access to your cloud service infrastructure?
+                    <P> Do you manage and store the identity of all personnel who have access to the IT infrastructure, including their level of access?
+                    <P> Do you manage and store the user identity of all personnel who have network access, including their level of access?
+                    <P> Do you provide tenants with documentation on how you maintain segregation of duties within your cloud service offering?
+                    <P> Are controls in place to prevent unauthorized access to your application, program, or object source code, and assure it is restricted to authorized personnel only?
+                    <P> Are controls in place to prevent unauthorized access to tenant application, program, or object source code, and assure it is restricted to authorized personnel only?
+                    <P> Do you provide multi-failure disaster recovery capability?
+                    <P> Do you monitor service continuity with upstream providers in the event of provider failure?
+                    <P> Do you have more than one provider for each service you depend on?
+                    <P> Do you provide access to operational redundancy and continuity summaries, including the services you depend on?
+                    <P> Do you provide the tenant the ability to declare a disaster?
+                    <P> Do you provide a tenant-triggered failover option?
+                    <P> Do you have a method of aligning provider and tenant data classification methodologies for access control purposes?
+                    <P> Does your management provision the authorization and restrictions for user access (e.g., employees, contractors, customers (tenants), business partners, and/or suppliers) prior to their access to data and any owned or managed (physical and virtual) applications, infrastructure systems, and network components?
+                    <P> Do you provide upon request user access (e.g., employees, contractors, customers (tenants), business partners and/or suppliers) to data and any owned or managed (physical and virtual) applications, infrastructure systems and network components?
+                    <P> If users are found to have inappropriate entitlements, are all remediation and certification actions recorded?
+                    <P> Is timely deprovisioning, revocation, or modification of user access to the organizations systems, information assets, and data implemented upon any change in status of employees, contractors, customers, business partners, or involved third parties?
+                    <P> Is any change in user access status intended to include termination of employment, contract or agreement, change of employment or transfer within the organization?
+                    <P> Do you support use of, or integration with, existing customer-based Single Sign On (SSO) solutions to your service?
+                    <P> Do you use open standards to delegate authentication capabilities to your tenants?
+                    <P> Do you support identity federation standards (e.g., SAML, SPML, WS-Federation, etc.) as a means of authenticating/authorizing users?
+                    <P> Do you have a Policy Enforcement Point capability (e.g., XACML) to enforce regional legal and policy constraints on user access?
+                    <P> Do you have an identity management system (enabling classification of data for a tenant) in place to enable both role-based and context-based entitlement to data?
+                    <P> Do you provide tenants with strong (multifactor) authentication options (e.g., digital certs, tokens, biometrics, etc.) for user access?
+                    <P> Do you allow tenants to use third-party identity assurance services?
+                    <P> Do you support password (e.g., minimum length, age, history, complexity) and account lockout (e.g., lockout threshold, lockout duration) policy enforcement?
+                    <P> Do you allow tenants/customers to define password and account lockout policies for their accounts?
+                    <P> Do you support the ability to force password changes upon first login?
+                    <P> Do you have mechanisms in place for unlocking accounts that have been locked out (e.g., self-service via email, defined challenge questions, manual unlock)?
+                    <P> Are utilities that can significantly manage virtualized partitions (e.g., shutdown, clone, etc.) appropriately restricted and monitored?
+                    <P> Do you have the capability to detect attacks that target the virtual infrastructure directly (e.g., shimming, Blue Pill, Hyper jumping, etc.)?
+                    <P> Are attacks that target the virtual infrastructure prevented with technical controls?
+                    <P> Are file integrity (host) and network intrusion detection (IDS) tools implemented to help facilitate timely detection, investigation by root cause analysis, and response to incidents?
+                    <P> Is physical and logical user access to audit logs restricted to authorized personnel?
+                    <P> Can you provide evidence that due diligence mapping of regulations and standards to your controls/architecture/processes has been done?
+                    <P> Are audit logs centrally stored and retained?
+                    <P> Are audit logs reviewed on a regular basis for security events (e.g., with automated tools)?
+                    <P> Do you log and alert any changes made to virtual machine images regardless of their running state (e.g., dormant, off or running)?
+                    <P> Are changes made to virtual machines, or moving of an image and subsequent validation of the image's integrity, made immediately available to customers through electronic methods (e.g., portals or alerts)?
+                    <P> Do you use a synchronized time-service protocol (e.g., NTP) to ensure all systems have a common time reference?
+                    <P> Do you provide documentation regarding what levels of system (e.g., network, storage, memory, I/O, etc.) oversubscription you maintain and under what circumstances/scenarios?
+                    <P> Do you restrict use of the memory oversubscription capabilities present in the hypervisor?
+                    <P> Do your system capacity requirements take into account current, projected, and anticipated capacity needs for all systems used to provide services to the tenants?
+                    <P> Is system performance monitored and tuned in order to continuously meet regulatory, contractual, and business requirements for all the systems used to provide services to the tenants?
+                    <P> Do security vulnerability assessment tools or services accommodate the virtualization technologies being used (e.g., virtualization aware)?
+                    <P> Are operating systems hardened to provide only the necessary ports, protocols, and services to meet business needs using technical controls (e.g., antivirus, file integrity monitoring, and logging) as part of their baseline build standard or template?
+                    <P> For your SaaS or PaaS offering, do you provide tenants with separate environments for production and test processes?
+                    <P> For your IaaS offering, do you provide tenants with guidance on how to create suitable production and test environments?
+                    <P> Do you logically and physically segregate production and non-production environments?
+                    <P> Are system and network environments protected by a firewall or virtual firewall to ensure business and customer security requirements?
+                    <P> Are system and network environments protected by a firewall or virtual firewall to ensure compliance with legislative, regulatory, and contractual requirements?
+                    <P> Are system and network environments protected by a firewall or virtual firewall to ensure separation of production and non-production environments?
+                    <P> Are system and network environments protected by a firewall or virtual firewall to ensure protection and isolation of sensitive data?
+                    <P> Are secured and encrypted communication channels used when migrating physical servers, applications, or data to virtual servers?
+                    <P> Do you use a network segregated from production-level networks when migrating physical servers, applications, or data to virtual servers?
+                    <P> Do you restrict personnel access to all hypervisor management functions or administrative consoles for systems hosting virtualized systems based on the principle of least privilege and supported through technical controls (e.g., two-factor authentication, audit trails, IP address filtering, firewalls and TLS-encapsulated communications to the administrative consoles)?
+                    <P> Are policies and procedures established and mechanisms configured and implemented to protect the wireless network environment perimeter and to restrict unauthorized wireless traffic?
+                    <P> Are policies and procedures established and mechanisms implemented to ensure wireless security settings are enabled with strong encryption for authentication and transmission, replacing vendor default settings (e.g., encryption keys, passwords, SNMP community strings)?
+                    <P> Are policies and procedures established and mechanisms implemented to protect wireless network environments and detect the presence of unauthorized (rogue) network devices for a timely disconnect from the network?
+                    <P> Do you implement technical measures and apply defense-in-depth techniques (e.g., deep packet analysis, traffic throttling and black-holing) for detection and timely response to network-based attacks associated with anomalous ingress or egress traffic patterns (e.g., MAC spoofing and ARP poisoning attacks) and/or distributed denial-of-service (DDoS) attacks?
+                    <P> Do you publish a list of all APIs available in the service and indicate which are standard and which are customized?
+                    <P> Is unstructured customer data available on request in an industry-standard format (e.g., .doc, .xls, or .pdf)?
+                    <P> Do you maintain an inventory of all mobile devices storing and accessing company data which includes device status (e.g., operating system and patch levels, lost or decommissioned, device assignee)?
+                    <P> Do you have a centralized mobile device management solution deployed to all mobile devices that are permitted to store, transmit, or process company data?
+                    <P> Are your password policies enforced through technical controls (i.e. MDM)?
+                    <P> Do your password policies prohibit the changing of authentication requirements (i.e. password/PIN length) via a mobile device?
+                    <P> Does your IT provide remote wipe or corporate data wipe for all company-accepted BYOD devices?
+                    <P> Does your IT provide remote wipe or corporate data wipe for all company-assigned mobile devices?
+                    <P> Do your mobile devices have the latest available security-related patches installed upon general release by the device manufacturer or carrier?
+                    <P> Do your mobile devices allow for remote validation to download the latest security patches by company IT personnel?
+                    <P> Do you maintain liaisons and points of contact with local authorities in accordance with contracts and appropriate regulations?
+                    <P> Do you have a documented security incident response plan?
+                    <P> Do you integrate customized tenant requirements into your security incident response plans?
+                    <P> Have you tested your security incident response plans in the last year?
+                    <P> Do you monitor and quantify the types, volumes, and impacts on all information security incidents?
+                    <P> Do you inspect and account for data quality errors and associated risks, and work with your cloud supply-chain partners to correct them?
+                    <P> Do you design and implement controls to mitigate and contain data security risks through proper separation of duties, role-based access, and least-privileged access for all personnel within your supply chain?
+                    <P> Do you assure reasonable information security across your information supply chain by performing an annual review?
+                    <P> Does your annual review include all partners/third-party providers upon which your information supply chain depends?
+                    <P> Do you permit tenants to perform independent vulnerability assessments?
+                    <P> Do you have external third party services conduct vulnerability scans and periodic penetration tests on your applications and networks?
+                    <P> Do you have anti-malware programs that support or connect to your cloud service offerings installed on all of your systems?
+                    <P> Do you ensure that security threat detection systems using signatures, lists, or behavioral patterns are updated across all infrastructure components within industry accepted time frames?
+                    <P> Do you conduct network-layer vulnerability scans regularly as prescribed by industry best practices?
+                    <P> Do you conduct application-layer vulnerability scans regularly as prescribed by industry best practices?
+                    <P> Do you conduct local operating system-layer vulnerability scans regularly as prescribed by industry best practices?
+                    <P> Will you make the results of vulnerability scans available to tenants at their request?
+                    <P> Do you have a capability to rapidly patch vulnerabilities across all of your computing devices, applications, and systems?
+                    <P> Will you provide your risk-based systems patching time frames to your tenants upon request?
+                    <P> Do you collect capacity and use data for all relevant components of your cloud service offering?
+                    <P> Do you perform annual internal assessments of conformance and effectiveness of your policies, procedures, and supporting measures and metrics?
+                    <P> Do you select and monitor outsourced providers in compliance with laws in the country where the data is processed, stored, and transmitted?
+                    <P> Do you select and monitor outsourced providers in compliance with laws in the country where the data originates?
+                    <P> Can you manage service-level conflicts or inconsistencies resulting from disparate supplier relationships?
+                    <P> Is mobile code authorized before its installation and use, and the code configuration checked, to ensure that the authorized mobile code operates according to a clearly defined security policy?
+                    <P> Is all unauthorized mobile code prevented from executing?
+                </div>
+
+                <h3 class="h3" style="margin-top: 20px"><a href="#policy" onclick="toggle('policy');" class="anchor">Policy</a></h3>
+                <div id="policy" style="display: none">
+                    <P>Do you verify your vendors follow the same standards?
+                    <P>Are you SOC2 compliant?
+                    <P>Do you conduct application penetration tests?
+                    <P>Do you conduct internal audits? What is the frequency?
+                    <P>Do you conduct external audits?
+                    <P>Is business continuity tested?
+                    <P>Do you share your SLA results?
+                    <P>How do you ensure new product and service development adheres to standards?
+                    <P>What are your quality assurance requirements and how are they conducted?
+                    <P>Do you have key management policies binding keys to identifiable owners?
+                    <P>Do you restrict physical access to information assets and functions by users and support personnel?
+                    <P>Do you have the capability to allow the creation of unique encryption keys per tenant?
+                    <P>Do you have a capability to manage encryption keys on behalf of tenants?
+                    <P>Do you have documented ownership for each stage of the lifecycle of encryption keys?
+                    <P>Do you have documentation establishing and defining your encryption management policies, procedures, and guidelines?
+                    <P> Do you have documented information security baselines for every component of your infrastructure (e.g., hypervisors, operating systems, routers, DNS servers, etc.)?
+                    <P> Do you conduct risk assessments associated with data governance requirements at least once a year?
+                    <P> Are your technical, business, and executive managers responsible for maintaining awareness of and compliance with security policies, procedures, and standards for both themselves and their employees as they pertain to the manager and employees' area of responsibility?
+                    <P> Do you provide tenants with documentation describing your Information Security Management Program (ISMP)?
+                    <P> Do you review your Information Security Management Program (ISMP) at least once a year?
+                    <P> Do you ensure your providers adhere to your information security and privacy policies?
+                    <P> Do your information security and privacy policies align with industry standards (ISO-27001, ISO-22307, CoBIT, etc.)?
+                    <P> Do you have agreements to ensure your providers adhere to your information security and privacy policies?
+                    <P> Do you disclose which controls, standards, certifications, and/or regulations you comply with?
+                    <P> Is a formal disciplinary or sanction policy established for employees who have violated security policies and procedures?
+                    <P> Are employees made aware of what actions could be taken in the event of a violation via their policies and procedures?
+                    <P> Do you perform, at minimum, annual reviews to your privacy and security policies?
+                    <P> Do you notify your tenants when you make material changes to your information security and/or privacy policies?
+                    <P> Are formal risk assessments aligned with the enterprise-wide framework and performed at least annually, or at planned intervals, determining the likelihood and impact of all identified risks, using qualitative and quantitative methods?
+                    <P> Is the likelihood and impact associated with inherent and residual risk determined independently, considering all risk categories (e.g., audit results, threat and vulnerability analysis, and regulatory compliance)?
+                    <P> Do you have a documented, organization-wide program in place to manage risk?
+                    <P> Do you make available documentation of your organization-wide risk management program?
+                    <P> Is your Privacy Policy aligned with industry standards?
+                    <P> Do you specifically train your employees regarding their specific role and the information security controls they must fulfill?
+                    <P> Do you document employee acknowledgment of training they have completed?
+                    <P> Is successful and timed completion of the training program considered a prerequisite for acquiring and maintaining access to sensitive systems?
+                    <P> Are personnel trained and provided with awareness programs at least once a year?
+                    <P> Are documented policies, procedures, and guidelines in place to govern change in employment and/or termination?
+                    <P> Do the above procedures and guidelines account for timely revocation of access and return of assets?
+                    <P> Are policies and procedures established and measures implemented to strictly limit access to your sensitive data and tenant data from portable and mobile devices (e.g., laptops, cell phones, and personal digital assistants (PDAs)), which are generally higher-risk than non-portable devices (e.g., desktop computers at the provider organization’s facilities)?
+                    <P> Are requirements for non-disclosure or confidentiality agreements reflecting the organization's needs for the protection of data and operational details identified, documented, and reviewed at planned intervals?
+                    <P> Do you provide tenants with a role definition document clarifying your administrative responsibilities versus those of the tenant?
+                    <P> Do you provide a formal, role-based, security awareness training program for cloud-related access and data management issues (e.g., multi-tenancy, nationality, cloud delivery model, segregation of duties implications, and conflicts of interest) for all persons with access to tenant data?
+                    <P> Are administrators and data stewards properly educated on their legal responsibilities with regard to security and data integrity?
+                    <P> Are users made aware of their responsibilities for maintaining awareness and compliance with published security policies, procedures, standards, and applicable regulatory requirements?
+                    <P> Are users made aware of their responsibilities for maintaining a safe and secure working environment?
+                    <P> Are users made aware of their responsibilities for leaving unattended equipment in a secure manner?
+                    <P> Do you share your business continuity and redundancy plans with your tenants?
+                    <P> Do you document how you grant and approve access to tenant data?
+                    <P> Do you require at least annual certification of entitlements for all system users and administrators (exclusive of users maintained by your tenants)?
+                    <P> Will you share user entitlement remediation and certification reports with your tenants, if inappropriate access may have been allowed to tenant data?
+                    <P> For your IaaS offering, do you provide customers with guidance on how to create a layered security architecture equivalence using your virtualized solution?
+                    <P> Do you regularly update network architecture diagrams that include data flows between security domains/zones?
+                    <P> Do you regularly review for appropriateness the allowed access/connectivity (e.g., firewall rules) between security domains/zones within the network?
+                    <P> Do your network architecture diagrams clearly identify high-risk environments and data flows that may have legal compliance impacts?
+                    <P> Do you provide policies and procedures (i.e. service level agreements) governing the use of APIs for interoperability between your service and third-party applications?
+                    <P> Do you provide policies and procedures (i.e. service level agreements) governing the migration of application data to and from your service?
+                    <P> Can data import, data export, and service management be conducted over secure (e.g., non-clear text and authenticated), industry accepted standardized network protocols?
+                    <P> Do you provide consumers (tenants) with documentation detailing the relevant interoperability and portability network protocol standards that are involved?
+                    <P> Do you use an industry-recognized virtualization platform and standard virtualization formats (e.g., OVF) to help ensure interoperability?
+                    <P> Do you have documented custom changes made to any hypervisor in use, and all solution-specific virtualization hooks available for customer review?
+                    <P> Do you provide anti-malware training specific to mobile devices as part of your information security awareness training?
+                    <P> Do you document and make available lists of approved application stores for mobile devices accessing or storing company data and/or company systems?
+                    <P> Do you have a policy enforcement capability (e.g., XACML) to ensure that only approved applications and those from approved application stores can be loaded onto a mobile device?
+                    <P> Does your BYOD policy and training clearly state which applications and applications stores are approved for use on BYOD devices?
+                    <P> Do you have a documented mobile device policy in your employee training that clearly defines mobile devices and the accepted usage and requirements for mobile devices?
+                    <P> Do you have a documented list of pre-approved cloud based services that are allowed to be used for use and storage of company business data via a mobile device?
+                    <P> Do you have a documented application validation process for testing device, operating system, and application compatibility issues?
+                    <P> Do you have a BYOD policy that defines the device(s) and eligibility requirements allowed for BYOD usage?
+                    <P> Does your mobile device policy require the use of encryption for either the entire device or for data identified as sensitive enforceable through technology controls for all mobile devices?
+                    <P> Does your mobile device policy prohibit the circumvention of built-in security controls on mobile devices (e.g., jailbreaking or rooting)?
+                    <P> Do you have detective and preventative controls on the device or via a centralized device management system which prohibit the circumvention of built-in security controls?
+                    <P> Does your BYOD policy clearly define the expectation of privacy, requirements for litigation, e-discovery, and legal holds?
+                    <P> Do you have detective and preventative controls on the device or via a centralized device management system which prohibit the circumvention of built-in security controls?
+                    <P> Do you require and enforce via technical controls an automatic lockout screen for BYOD and company owned devices?
+                    <P> Do you manage all changes to mobile device operating systems, patch levels, and applications via your company's change management processes?
+                    <P> Do you have password policies for enterprise issued mobile devices and/or BYOD mobile devices?
+                    <P> Do you have a policy that requires BYOD users to perform backups of specified corporate data?
+                    <P> Do you have a policy that requires BYOD users to prohibit the usage of unapproved application stores?
+                    <P> Do you have a policy that requires BYOD users to use anti-malware software (where supported)?
+                    <P> Does your BYOD policy clarify the systems and servers allowed for use or access on the BYOD-enabled device?
+                    <P> Does your BYOD policy specify the user roles that are allowed access via a BYOD-enabled device?
+                    <P> Does your security information and event management (SIEM) system merge data sources (e.g., app logs, firewall logs, IDS logs, physical access logs, etc.) for granular analysis and alerting?
+                    <P> Does your logging and monitoring framework allow isolation of an incident to specific tenants?
+                    <P> Does your incident response plan comply with industry standards for legally admissible chain-of-custody management processes and controls?
+                    <P> Does your incident response capability include the use of legally admissible forensic data collection and analysis techniques?
+                    <P> Are you capable of supporting litigation holds (freeze of data from a specific point in time) for a specific tenant without freezing other tenant data?
+                    <P> Do you publish a roles and responsibilities document specifying what you vs. your tenants are responsible for during security incidents?
+                    <P> Will you share statistical information for security incident data with your tenants upon request?
+                    <P> Do you provide tenants with capacity planning and use reports?
+                    <P> Do you make security incident information available to all affected customers and providers periodically through electronic methods (e.g., portals)?
+                    <P> Does legal counsel review all third-party agreements?
+                    <P> Do third-party agreements include provision for the security and protection of information and assets?
+                    <P> Do you provide the client with a list and copies of all subprocessing agreements and keep this updated?
+                    <P> Do you review the risk management and governanced processes of partners to account for risks inherited from other members of that partner's supply chain?
+                    <P> Are policies and procedures established, and supporting business processes and technical measures implemented, for maintaining complete, accurate, and relevant agreements (e.g., SLAs) between providers and customers (tenants)?
+                    <P> Do you have the ability to measure and address non-conformance of provisions and/or terms across the entire supply chain (upstream/downstream)?
+                    <P> Do you review all agreements, policies, and processes at least annually?
+                </div>
+           </div>
+
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+            
+            <script src="/lib/jquery/jquery.min.js"></script>
+            <script src="/lib/jquery/jquery-migrate.min.js"></script>
+            <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <script src="/lib/easing/easing.min.js"></script>
+            <script src="/lib/superfish/hoverIntent.js"></script>
+            <script src="/lib/superfish/superfish.min.js"></script>
+            <script src="/lib/wow/wow.min.js"></script>
+            <script src="/lib/waypoints/waypoints.min.js"></script>
+            <script src="/lib/counterup/counterup.min.js"></script>
+            <script src="/lib/owlcarousel/owl.carousel.min.js"></script>
+            <script src="/lib/isotope/isotope.pkgd.min.js"></script>
+            <script src="/lib/lightbox/js/lightbox.min.js"></script>
+                    
+            <script src="/js/main.js"></script>
+            <script src="/js/site.js"></script>
+
+            <script>
+                function toggle(source) {
+                    $("#" + source).slideToggle();
+                }
+            </script>
+
+            <script>
+            document.getElementById('headerLogo').addEventListener("click", function() {
+                window.location.href = "/";
+            })
+        </script>
+    </body>
+</html>

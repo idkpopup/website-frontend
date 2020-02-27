@@ -1,0 +1,51 @@
+﻿    <style>
+        button {
+            background: green;
+        }
+    </style>
+    
+    <div id="cookieConsent" class="alert alert-info alert-dismissible fade show cookies" role="alert">
+        <div class="container">
+            <div class="row">
+                <div class="col"><p>We use cookies to personalize content and to analyze our traffic. We do not share your information.
+                <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy Policy</a> and <a asp-area="" asp-controller="Home" asp-action="TermsOfService">Terms of Service</a>.</p>
+                </div>
+                <div class="col-1 pull-right">
+                <button type="button" id="btn-accept" class="btn btn-dark">
+                    <span aria-hidden="true">Accept</span>
+                </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        document.getElementById('btn-accept').addEventListener("click", function (event) {
+            document.cookie = "consent=true";
+            document.getElementById('cookieConsent').style.display ="none";
+            
+        });
+
+        
+        function getCookie(cname) {
+                var name = cname + "=";
+                var decodedCookie = decodeURIComponent(document.cookie);
+                var ca = decodedCookie.split(';');
+                for(var i = 0; i <ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                    }
+                    if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                    }
+                }
+                return "";
+            };
+        
+        if (getCookie('consent') === "true") {
+            document.getElementById('cookieConsent').style.display ="none";            
+        };
+
+        
+    </script>

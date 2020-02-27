@@ -1,0 +1,332 @@
+@{
+    ViewBag.Title = "New Business Checklist";
+}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158109460-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-158109460-1');
+        </script>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="new business checklist, starting a business, running a business, business consulting, cloud consulting" name="keywords">
+        <meta content="Setting up and maintaining a business requires adequate decision making, technology investments, and paperwork.  Here's our list:" name="description">
+
+        <!-- Favicons -->
+        <link href="/img/logo.png" rel="icon">
+        <link href="/img/logo.png" rel="apple-touch-icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
+            rel="stylesheet">
+
+        <!-- Bootstrap CSS File -->
+        <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Libraries CSS Files -->
+        <link href="/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="/lib/animate/animate.min.css" rel="stylesheet">
+        <link href="/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+        <link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <!-- Main Stylesheet File -->
+        <link href="/css/style.css" rel="stylesheet">
+
+        <style>
+            .master {
+                margin-bottom: 20px;
+                background: #222222;
+            }
+
+            .main-buffer {
+                margin-top: 120px;
+            }
+
+            .section-margin {
+                margin-top: 40px;
+            }
+
+            .hide-display {
+                display: none;
+            }
+            
+            h4 {
+                font-size: 36px;
+                font-size: 5.4vw;
+                font-family: roboto;
+                color: #9FC7E3;
+            }
+
+            h3 {
+                font-size: 40px;
+                color: #9FC7E3;
+            }
+
+
+            p {
+                font-family: open-sans, Sans-serif, monospace;
+                font-size: 1em;
+                letter-spacing: 2px;
+                color: #BCBEC0;
+            }
+
+            ul {
+                list-style-position: outside;
+            }
+        </style>
+    </head>
+
+    <body class="master">
+        <div class="main-buffer">
+            <h4>Setting Up a New Business</h4>
+            <p class="section-margin"><strong>Setting up and maintaining a business requires adequate decision making, technology investments, and paperwork.  Here's our list:</strong></p>
+            <p>If you'd like to use this form, we will track your progress.</p>
+
+            <div id="foundationalHeader"><ul class="section-margin"><li><h3><div onclick="toggle('foundational');">Foundational</div></h3></li></ul></div>
+            <div id="foundational" class="hide-display">
+                <ul>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="research"/> Industry research<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="productDescription"/> Product or service description<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="members"/> Draft Members and Equity Document<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="assets"/> List of starting assets<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="funding"/> Funding model<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="feedback"/> Feedback from friends and families<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="leads"/> Lead acquisition strategy<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="executiveSummary"/> Executive Summary<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="timeline"/> Timeline<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="businessPlan"/> Business Plan Deck<br><br>
+                </ul>
+            </div>
+
+            <div id="internetHeader"><ul class="section-margin"><li><h3><div onclick="toggle('internet');">Internet Infrastructure and Assets</div></h3></li></ul></div>
+            <div id="internet" class="hide-display">
+                <ul>
+                    <p><input type="checkbox" class="checkbox" id="phoneNumbers"/> Phone numbers<br>
+                    <p><input type="checkbox" class="checkbox" id="cloud"/> Cloud Provider<br>
+                    <p><input type="checkbox" class="checkbox" id="domain"/> Domain name<br>
+                    <p><input type="checkbox" class="checkbox" id="emailServer"/> Email server<br>
+                    <p><input type="checkbox" class="checkbox" id="emailServer"/> Website<br>
+                    <p><input type="checkbox" class="checkbox" id="linkedIn"/> LinkedIn<br>
+                    <p><input type="checkbox" class="checkbox" id="crunchbase"/> Crunchbase<br>
+                    <p><input type="checkbox" class="checkbox" id="maps"/> Google/Apple Maps<br>
+                    <p><input type="checkbox" class="checkbox" id="facebook"/> Facebook<br>
+                    <p><input type="checkbox" class="checkbox" id="twitter"/> Twitter<br>
+                    <p><input type="checkbox" class="checkbox" id="instagram"/> Instagram<br>
+                    <p><input type="checkbox" class="checkbox" id="youtube"/> YouTube<br>
+                </ul>
+            </div>
+
+            <div id="softwareHeader"><ul class="section-margin"><li><h3><div onclick="toggle('software');">Software</div></h3></li></ul></div>
+            <div id="software" class="hide-display">
+                <ul>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="projectTracking"/> Cloud-based project tracking software<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="communications"/> Communications platform<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="documentRepository"/> Shared document repository<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="emailClient"/> Email client<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="officeSoftware"/> Office Software<br><br>
+                </ul>
+            </div>
+            
+            <div id="registerHeader"><ul class="section-margin"><li><h3><div onclick="toggle('register');">Register</div></h3></li></ul></div>
+            <div id="register" class="hide-display">
+                <ul>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="registeredAgent"/> Determine Registered Agent<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="fileLLC"/> File for an LLC/S-Scorp<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="explainLLC"/> Explanation of LLC or S-Corp Structure<br>
+                </ul>
+            </div>
+            
+            <div id="aooHeader"><ul class="section-margin"><li><h3><div onclick="toggle('aoo');">File Articles of Organization</div></h3></li></ul></div>
+            <div id="aoo" class="hide-display">
+                <ul>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="managementServices"/> Management Structure<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="locationOfOperations"/> Location of Operations<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="agent"/> Registered Agent<br>
+                </ul>
+            </div>
+
+            <div id="oaHeader"><ul  class="section-margin"><li><h3><div onclick="toggle('oa');">File Operating Agreement</div></h3></li></ul></div>
+            <div id="oa" class="hide-display">
+                <ul>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="toc"/> Terms and Conditions<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="pay"/> Pay Structure<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="mtgSystem"/> Management System<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="rights"/> Voting Rights<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="removalOrAdditionOfMembers"/> Removal or Additions of Members<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="amending"/> Amending the Agreement<br>
+                </ul>
+            </div>
+            
+            <div id="llcHeader"><ul class="section-margin"><li><h3><div onclick="toggle('llc');">File Statement of Information (LLC-12 in California)</div></h3></li></ul></div>
+            <div id="llc" class="hide-display">
+                <ul>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="LLCNumber"/> Filing Number<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="LLCName"/> LLC Name<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="address"/> Address<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="nameAndAddresses"/> Name and address of the officers<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="workDescription"/> Description of your work<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="LLCAgent"/> Registered Agent Name and address<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="managersOrMembers"/> Managers or members<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="CEO"/> CEO<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="CEOemailAddress"/> Email Address<br>
+                </ul>
+            </div>
+            
+            <div id="additionalHeader"><ul class="section-margin"><li><h3><div onclick="toggle('additional');">Additional</div></h3></li></ul></div>
+            <div id="additional" class="hide-display">
+                <ul>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="dba"/> Register DBA with the state government<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="ein"/> Obtain EIN<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="941"/> File federal form 941 within 12 months (Employee's Quarterly Federal Tax Form)<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="940"/> File federal form 940 within 15 months (Employers Annual Federal Unemployment Tax Return)<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="stateTax"/> Pay fees for local and state Franchise Tax<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="registerSalesTax"/> If selling goods, register Sales Tax<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="bankAccount"/> Bank account<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="businessLicenses"/> Business licenses<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="permits"/> Seller permits<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="trademarks"/> Trademarks<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="patents"/> Patents or filings<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="logo"/> Logo<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="cards"/> Business Cards<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="letterhead"/> Letterhead (see below)<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="nda"/> Non-Disclosure Agreement<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="invoice"/> Invoice template<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="po"/> Purchase Order template<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="inventory"/> Inventory requirements<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="vendorList"/> Vendor list<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="merchant"/> Merchant payment processing account<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="accountSystem"/> Accounting system<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="accountingAccounts"/> Accounting accounts <br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="taxAccounts"/> Tax accounts<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="generalLedger"/> General Ledger<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="businessInsurance"/> Business Insurance<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="complianceCalendar"/> Compliance Calendar<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="network"/> People Network Graph (close external contacts and relationships)<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="swot"/> SWOT analysis<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="orgChart"/> Org chart<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="mentors"/> Business mentors<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="affiliates"/> Affiliates<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="clientSheet"/> Client sheet<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="employeeDirectory"/> Employee directory<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="resumes"/> Employee Resumes, Offer Letters, Signing Letter, NDA, onboarding package<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="paymentProcess"/> Employee payment process<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="benefits"/> Employee benefits<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="payroll"/> Payroll<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="jobOffer"/> Job offer template<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="onboarding"/> On-boarding package<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="personas"/> Customer personas<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="marketingPlan"/> Marketing plan<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="price"/> Price sheet<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="ads"/> Advertisements<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="salesPitch"/> Drafted sales pitch<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="callCenter"/> Call Center strategy<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="articlesOfRiskAndCompliance"/> Articles of risk and compliance<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="securityPosture"/> Security Posture<br>
+                    <p><input type="checkbox" name="chk" class="checkbox" id="offices"/> Offices<br>
+                </ul>
+            </div>
+
+            <div id="docsHeader"><ul class="section-margin"><li><h3><div onclick="toggle('docs');">Common Documents Requiring Letterheads</div></h3><ul></li></div>
+            <div id="docs" class="hide-display">
+            <ul>
+                <p><input type="checkbox" name="chk" class="checkbox" id="lExecutiveSummary"/> Executive Summary<br>
+                <p><input type="checkbox" name="chk" class="checkbox" id="lBusinessPlan"/> Business Plan<br>
+                <p><input type="checkbox" name="chk" class="checkbox" id="lProductDescription"/> Product Descriptions<br>
+                <p><input type="checkbox" name="chk" class="checkbox" id="lSOP"/> Standard Operating Procedures<br>
+                <p><input type="checkbox" name="chk" class="checkbox" id="lSales"/> Sales Agreement<br>
+                <p><input type="checkbox" name="chk" class="checkbox" id="lService"/> Service Agreement<br>
+                <p><input type="checkbox" name="chk" class="checkbox" id="lIntent"/> Letter of Intent<br>
+                <p><input type="checkbox" name="chk" class="checkbox" id="lNDA"/> Non-Disclosure Agreement<br>
+                <p><input type="checkbox" name="chk" class="checkbox" id="lDisclosures"/> Disclosures<br>
+                <p><input type="checkbox" name="chk" class="checkbox" id="lTofU"/> Terms of Use<br>
+                <p><input type="checkbox" name="chk" class="checkbox" id="lpp"/> Privacy Policy<br>
+                <p><input type="checkbox" name="chk" class="checkbox" id="lLiability"/> Release of Liability<br>
+                <p><input type="checkbox" name="chk" class="checkbox" id="lBillOfMaterials"/> Bill of Materials<br>
+                <p><input type="checkbox" name="chk" class="checkbox" id="linvoice"/> Invoice<br>
+                <p><input type="checkbox" name="chk" class="checkbox" id="lPurchaseOrder"/> Purchase Order<br>
+                <p><input type="checkbox" name="chk" class="checkbox" id="lpa"/> Purchase Agreement<br>
+                <p><input type="checkbox" name="chk" class="checkbox" id="lbos"/> Bill of Sale<br>
+                <p><input type="checkbox" name="chk" class="checkbox" id="lscope"/> Scope of Work<br>
+                <p><input type="checkbox" name="chk" class="checkbox" id="lapp"/> Job Application/Job Description<br>
+                <p><input type="checkbox" name="chk" class="checkbox" id="lEmpolument"/> Employment Offer Letter<br>
+                <p><input type="checkbox" name="chk" class="checkbox" id="lEmpConttract"/> Employment Contract<br>
+                <p><input type="checkbox" name="chk" class="checkbox" id="lPaystub"/> Employee Paystub<br>
+                <p><input type="checkbox" name="chk" class="checkbox" id="lHandbook"/> Employee Handbook<br>
+                <p><input type="checkbox" name="chk" class="checkbox" id="lNonCompete"/> Non-Compete Agreement<br>
+                <p><input type="checkbox" name="chk" class="checkbox" id="lMinutes"/> Minutes<br>
+                <p><input type="checkbox" name="chk" class="checkbox" id="lBalanceSheet"/> Balance Sheet<br>
+                <p><input type="checkbox" name="chk" class="checkbox" id="lIncome"/> Income Statement/Profit and Loss Statement<br>
+                <p><input type="checkbox" name="chk" class="checkbox" id="lsig"/> Email header and signature<br>
+                <p><input type="checkbox" name="chk" class="checkbox" id="lFax"/> Fax Cover Sheet<br>
+                <p><input type="checkbox" name="chk" class="checkbox" id="lRecommendation"/> Letter of Recommendation<br>
+                <p><input type="checkbox" name="chk" class="checkbox" id="lOrgChart"/> Organizational Chart<br>
+                <p><input type="checkbox" name="chk" class="checkbox" id="lTermSheet"/> Term Sheet<br>
+            </ul>
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+        
+        <script src="/lib/jquery/jquery.min.js"></script>
+        <script src="/lib/jquery/jquery-migrate.min.js"></script>
+        <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="/lib/easing/easing.min.js"></script>
+        <script src="/lib/superfish/hoverIntent.js"></script>
+        <script src="/lib/superfish/superfish.min.js"></script>
+        <script src="/lib/wow/wow.min.js"></script>
+        <script src="/lib/waypoints/waypoints.min.js"></script>
+        <script src="/lib/counterup/counterup.min.js"></script>
+        <script src="/lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="/lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="/lib/lightbox/js/lightbox.min.js"></script>
+        <script src="/lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+        
+        <script src="/js/main.js"></script>
+        <script src="/js/site.js"></script>
+
+         <script>
+                function toggle(source) {
+                    $("#" + source).toggle();
+                }
+        </script>
+
+        <script>
+            document.getElementById('headerLogo').addEventListener("click", function() {
+                window.location.href = "/";
+            });
+            
+            var checkboxJSON = {};
+            if (getCookie('newBusiness') != "") {
+                var cookieVal = getCookie('newBusiness');
+                
+                checkboxJSON = JSON.parse(JSON.parse(cookieVal));
+            }
+            
+            for (var prop in checkboxJSON) {
+                if (checkboxJSON.hasOwnProperty(prop)) {
+                    if (checkboxJSON[prop] == true) {
+                        document.getElementById(prop).checked = true;
+                    }
+                }
+            }
+                                
+            document.querySelectorAll('input[type=checkbox]').forEach(function(node) {
+                
+                if (node.type === "checkbox") {   
+                    checkboxJSON[node.id] = node.checked;
+                }
+
+                node.addEventListener("click", function () {
+                    checkboxJSON[node.id] = node.checked;
+                    setCookie("newBusiness", JSON.stringify(checkboxJSON), 90);
+                });           
+            });
+            
+
+        </script>
+    </body> 
+</html>

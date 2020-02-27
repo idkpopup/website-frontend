@@ -1,0 +1,16 @@
+body {
+    background: black;
+}
+
+#header {
+    background: black; margin-bottom: 20px   
+}
+
+h2 {
+    color: #800080
+}
+
+h6 {
+    color: #800080;
+    font-weight: bold;   
+}

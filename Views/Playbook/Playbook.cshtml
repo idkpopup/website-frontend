@@ -1,0 +1,190 @@
+@{
+    ViewBag.Title = "Playbook";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158109460-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-158109460-1');
+    </script>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="business, checklist, playbook, punch-list, business consulting, cloud consulting" name="keywords">
+    <meta content="At IDK popup, we operate transparently, which is why we publish our playbook and open source our code. 
+    Writing a Product Description, Our current collection of playbooks include Setting up a Business Checklist, Performing a Technology Due Dililgence - Checklist, Scrum, and more." name="description">
+
+    <!-- Favicons -->
+    <link href="/img/logo.png" rel="icon">
+    <link href="/img/logo.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
+          rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="/css/style.css" rel="stylesheet">
+    
+    <style>
+        .nav-menu a {
+            color: #9FC7E3;
+        }
+        </style>
+</head>
+
+<body style="background: black;">
+    <section id="portfolio" class="section-bg">
+                <div class="container">
+
+                    <header class="section-header">
+                        <h3 class="section-title">Playbook</h3>
+                    </header>
+
+                    <div class="row portfolio-container">
+
+                        <a asp-controler="Playbook" asp-action="NewBusinessChecklist">
+                            <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="/img/playbook/newBusinessChecklist.png" class="img-fluid" alt="">
+                                    </figure>
+
+                                    <div class="portfolio-info card">
+                                        Setting Up a Business - Checklist
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a asp-controler="Playbook" asp-action="technicalDueDiligence">
+                            <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="/img/playbook/due-diligence.png" class="img-fluid" alt="">
+                                    </figure>
+
+                                    <div class="portfolio-info card">
+                                        Performing a Technology Due Dililgence - Checklist
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a asp-controler="Playbook" asp-action="Scrum">
+                            <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="/img/playbook/team.png">
+                                    </figure>
+
+                                    <div class="portfolio-info card">
+                                        The Basics of Scrum
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a asp-controler="Playbook" asp-action="productDescription">
+                            <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="/img/playbook/product-description.png" class="img-fluid" alt="">
+                                    </figure>
+
+                                    <div class="portfolio-info card">
+                                        Writing a Product Description
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a asp-controler="Playbook" asp-action="OmniChannelMarketing">
+                            <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="/img/playbook/marketing.png" class="img-fluid" alt="">
+                                    </figure>
+
+                                    <div class="portfolio-info card">
+                                        Omni-Channel Marketing
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a asp-controler="Playbook" asp-action="StandardQuestionere">
+                            <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="/img/playbook/questionare.png">
+                                    </figure>
+
+                                    <div class="portfolio-info card">
+                                        IDK popup's Standard Questionnare
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+
+                        <a as-controler="Playbook" asp-action="CAIQ">
+                            <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="/img/playbook/csa.png" class="img-fluid" alt="">
+                                    </figure>
+
+                                    <div class="portfolio-info card">
+                                        Consensus Assessments Initiative Questionnaire
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                </div>
+            </section>
+
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+        
+        <script src="/lib/jquery/jquery.min.js"></script>
+        <script src="/lib/jquery/jquery-migrate.min.js"></script>
+        <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="/lib/easing/easing.min.js"></script>
+        <script src="/lib/superfish/hoverIntent.js"></script>
+        <script src="/lib/superfish/superfish.min.js"></script>
+        <script src="/lib/wow/wow.min.js"></script>
+        <script src="/lib/waypoints/waypoints.min.js"></script>
+        <script src="/lib/counterup/counterup.min.js"></script>
+        <script src="/lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="/lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="/lib/lightbox/js/lightbox.min.js"></script>
+        <script src="/lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+        
+
+        <!-- Template Main Javascript File -->
+        <script src="/js/main.js"></script>
+        <script src="/js/site.js"></script>
+
+        <script>
+            document.getElementById('headerLogo').addEventListener("click", function() {
+                window.location.href = "/";
+            })
+        </script>
+
+            
+    </body>
+    </html>
