@@ -14,6 +14,7 @@ namespace Site.ServiceModels
         public String Phone { get; set; }
         public String Website { get; set; }
         public String Company { get; set; }
+        public String Message { get; set; }
 
         public String Timezone { get; set; }
 

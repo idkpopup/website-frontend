@@ -19,6 +19,7 @@ function registerUser(clickSource) {
         "Phone": document.getElementById('phone').value,
         "Website": document.getElementById('website').value,
         "Company": document.getElementById('company').value,
+        "Message": document.getElementById('message').value,
         "MailingList": subscribeToMailingList
     };
 
